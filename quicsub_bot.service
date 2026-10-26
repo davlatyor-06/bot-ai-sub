@@ -1,0 +1,16 @@
+[Unit]
+Description=QuicSub Telegram Subtitle Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+# Serverdagi loyiha yo'lini kiriting (masalan /root/quicsub_bot yoki /home/ubuntu/quicsub_bot)
+WorkingDirectory=/root/quicsub_bot
+ExecStart=/usr/bin/python3 /root/quicsub_bot/main.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

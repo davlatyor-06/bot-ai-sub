@@ -1,0 +1,7 @@
+telethon>=1.36.0
+aiogram>=3.17.0
+imageio-ffmpeg>=0.5.1
+python-dotenv>=1.0.0
+openai>=1.40.0
+google-genai>=0.1.0
+aiofiles>=24.1.0
